@@ -1,0 +1,30 @@
+# Ignore wandb folder
+wandb/
+
+# Ignore Report folder
+Report/
+
+# Ignore paper folder
+paper/
+
+# Ignore Python cache files and folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Ignore system files
+.DS_Store
+Thumbs.db
