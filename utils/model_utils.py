@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-import torch
-
+import tensorflow as tf
+from sklearn.metrics import mean_absolute_error
 def RSE(pred, true):
     return torch.sqrt(torch.sum((true - pred) ** 2)) / torch.sqrt(torch.sum((true - true.mean()) ** 2))
 
@@ -132,7 +132,8 @@ def train_val(model, criterion, optimizer, train_loader, val_loader, device, bat
   train_loss_per_epoch = []
   val_loss_per_epoch = []
 
-  total_time = time.time()
+  torch.cuda.synchronize()
+  start_time = time.time()
   for epoch in range(epochs):
       model.train()
       running_loss = 0.0
@@ -183,7 +184,8 @@ def train_val(model, criterion, optimizer, train_loader, val_loader, device, bat
 
       print(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_epoch_loss:.4f}, Val Loss: {val_epoch_loss:.4f}")
 
-  total_time = time.time() - total_time
+  torch.cuda.synchronize()
+  total_time = time.time() - start_time
 
   # plt.plot(train_loss_per_epoch)
   # plt.plot(val_loss_per_epoch)
@@ -191,3 +193,26 @@ def train_val(model, criterion, optimizer, train_loader, val_loader, device, bat
   # plt.show()
 
   return model, total_time, train_loss_per_epoch, val_loss_per_epoch
+
+
+# for keras
+def evaluate_loader(model, test_loader, scaler_y):
+  all_y_true = []
+  all_y_pred = []
+  for X, y in test_loader:
+    y_pred = model(X, training=False)
+    all_y_true.append(y)
+    all_y_pred.append(y_pred)
+
+  if len(all_y_true) == 0:
+    return np.nan
+
+  all_y_true = tf.concat(all_y_true, axis=0).numpy()
+  all_y_pred = tf.concat(all_y_pred, axis=0).numpy()
+
+  # inverse transform to original scale
+  y_true_orig = scaler_y.inverse_transform(all_y_true)
+  y_pred_orig = scaler_y.inverse_transform(all_y_pred)
+
+  mae = mean_absolute_error(y_true_orig, y_pred_orig)
+  return mae

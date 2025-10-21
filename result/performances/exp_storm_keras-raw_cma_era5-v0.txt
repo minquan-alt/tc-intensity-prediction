@@ -1,0 +1,217 @@
+TRAINING SUMMARY
+TKAN - 6h Prediction - Time: 45.76s
+TKAN - 6h Prediction - MAE: 2.129748
+TKAN - 6h Prediction - MAE 2020: 1.717464
+TKAN - 6h Prediction - MAE 2021: 1.675033
+TKAN - 6h Prediction - MAE 2022: 3.164258
+
+GRU - 6h Prediction - Time: 17.24s
+GRU - 6h Prediction - MAE: 2.211402
+GRU - 6h Prediction - MAE 2020: 1.573751
+GRU - 6h Prediction - MAE 2021: 1.522792
+GRU - 6h Prediction - MAE 2022: 3.791955
+
+LSTM - 6h Prediction - Time: 16.18s
+LSTM - 6h Prediction - MAE: 2.295107
+LSTM - 6h Prediction - MAE 2020: 1.748263
+LSTM - 6h Prediction - MAE 2021: 1.707533
+LSTM - 6h Prediction - MAE 2022: 3.646632
+
+TKAN - 12h Prediction - Time: 33.19s
+TKAN - 12h Prediction - MAE: 3.201428
+TKAN - 12h Prediction - MAE 2020: 2.321788
+TKAN - 12h Prediction - MAE 2021: 2.160717
+TKAN - 12h Prediction - MAE 2022: 5.530402
+
+GRU - 12h Prediction - Time: 14.69s
+GRU - 12h Prediction - MAE: 2.778943
+GRU - 12h Prediction - MAE 2020: 2.139298
+GRU - 12h Prediction - MAE 2021: 1.978079
+GRU - 12h Prediction - MAE 2022: 4.531950
+
+LSTM - 12h Prediction - Time: 15.44s
+LSTM - 12h Prediction - MAE: 3.138040
+LSTM - 12h Prediction - MAE 2020: 2.233137
+LSTM - 12h Prediction - MAE 2021: 2.276919
+LSTM - 12h Prediction - MAE 2022: 5.251494
+
+TKAN - 18h Prediction - Time: 32.12s
+TKAN - 18h Prediction - MAE: 3.472013
+TKAN - 18h Prediction - MAE 2020: 2.617925
+TKAN - 18h Prediction - MAE 2021: 2.474278
+TKAN - 18h Prediction - MAE 2022: 5.746382
+
+GRU - 18h Prediction - Time: 14.41s
+GRU - 18h Prediction - MAE: 3.633317
+GRU - 18h Prediction - MAE 2020: 2.553703
+GRU - 18h Prediction - MAE 2021: 2.471090
+GRU - 18h Prediction - MAE 2022: 6.372421
+
+LSTM - 18h Prediction - Time: 14.86s
+LSTM - 18h Prediction - MAE: 3.402921
+LSTM - 18h Prediction - MAE 2020: 2.602216
+LSTM - 18h Prediction - MAE 2021: 2.509187
+LSTM - 18h Prediction - MAE 2022: 5.477996
+
+TKAN - 24h Prediction - Time: 30.85s
+TKAN - 24h Prediction - MAE: 4.090005
+TKAN - 24h Prediction - MAE 2020: 3.094528
+TKAN - 24h Prediction - MAE 2021: 3.080147
+TKAN - 24h Prediction - MAE 2022: 6.566223
+
+GRU - 24h Prediction - Time: 13.62s
+GRU - 24h Prediction - MAE: 4.076140
+GRU - 24h Prediction - MAE 2020: 3.234200
+GRU - 24h Prediction - MAE 2021: 2.955124
+GRU - 24h Prediction - MAE 2022: 6.544002
+
+LSTM - 24h Prediction - Time: 14.83s
+LSTM - 24h Prediction - MAE: 4.442011
+LSTM - 24h Prediction - MAE 2020: 3.191531
+LSTM - 24h Prediction - MAE 2021: 2.932747
+LSTM - 24h Prediction - MAE 2022: 7.889444
+
+TKAN - 30h Prediction - Time: 28.44s
+TKAN - 30h Prediction - MAE: 5.047007
+TKAN - 30h Prediction - MAE 2020: 3.478917
+TKAN - 30h Prediction - MAE 2021: 3.222184
+TKAN - 30h Prediction - MAE 2022: 9.335395
+
+GRU - 30h Prediction - Time: 13.45s
+GRU - 30h Prediction - MAE: 4.935658
+GRU - 30h Prediction - MAE 2020: 3.374555
+GRU - 30h Prediction - MAE 2021: 3.218550
+GRU - 30h Prediction - MAE 2022: 9.062833
+
+LSTM - 30h Prediction - Time: 13.91s
+LSTM - 30h Prediction - MAE: 5.347997
+LSTM - 30h Prediction - MAE 2020: 3.674039
+LSTM - 30h Prediction - MAE 2021: 3.517131
+LSTM - 30h Prediction - MAE 2022: 9.758718
+
+TKAN - 36h Prediction - Time: 26.49s
+TKAN - 36h Prediction - MAE: 5.122808
+TKAN - 36h Prediction - MAE 2020: 4.008637
+TKAN - 36h Prediction - MAE 2021: 3.703368
+TKAN - 36h Prediction - MAE 2022: 8.392840
+
+GRU - 36h Prediction - Time: 13.06s
+GRU - 36h Prediction - MAE: 5.473618
+GRU - 36h Prediction - MAE 2020: 3.828126
+GRU - 36h Prediction - MAE 2021: 3.686403
+GRU - 36h Prediction - MAE 2022: 9.852711
+
+LSTM - 36h Prediction - Time: 13.32s
+LSTM - 36h Prediction - MAE: 5.126514
+LSTM - 36h Prediction - MAE 2020: 3.772408
+LSTM - 36h Prediction - MAE 2021: 3.867555
+LSTM - 36h Prediction - MAE 2022: 8.421654
+
+TKAN - 42h Prediction - Time: 28.04s
+TKAN - 42h Prediction - MAE: 5.739285
+TKAN - 42h Prediction - MAE 2020: 4.240215
+TKAN - 42h Prediction - MAE 2021: 3.958046
+TKAN - 42h Prediction - MAE 2022: 10.028251
+
+GRU - 42h Prediction - Time: 13.06s
+GRU - 42h Prediction - MAE: 5.547351
+GRU - 42h Prediction - MAE 2020: 4.362463
+GRU - 42h Prediction - MAE 2021: 4.059402
+GRU - 42h Prediction - MAE 2022: 9.056705
+
+LSTM - 42h Prediction - Time: 12.67s
+LSTM - 42h Prediction - MAE: 5.866651
+LSTM - 42h Prediction - MAE 2020: 4.298440
+LSTM - 42h Prediction - MAE 2021: 4.160275
+LSTM - 42h Prediction - MAE 2022: 10.119352
+
+TKAN - 48h Prediction - Time: 25.20s
+TKAN - 48h Prediction - MAE: 6.038435
+TKAN - 48h Prediction - MAE 2020: 4.689178
+TKAN - 48h Prediction - MAE 2021: 4.247255
+TKAN - 48h Prediction - MAE 2022: 10.251620
+
+GRU - 48h Prediction - Time: 11.66s
+GRU - 48h Prediction - MAE: 6.221702
+GRU - 48h Prediction - MAE 2020: 4.628833
+GRU - 48h Prediction - MAE 2021: 4.333860
+GRU - 48h Prediction - MAE 2022: 10.849405
+
+LSTM - 48h Prediction - Time: 12.93s
+LSTM - 48h Prediction - MAE: 5.814512
+LSTM - 48h Prediction - MAE 2020: 4.647702
+LSTM - 48h Prediction - MAE 2021: 4.228900
+LSTM - 48h Prediction - MAE 2022: 9.513927
+
+TKAN - 54h Prediction - Time: 23.82s
+TKAN - 54h Prediction - MAE: 6.787284
+TKAN - 54h Prediction - MAE 2020: 5.133776
+TKAN - 54h Prediction - MAE 2021: 4.749226
+TKAN - 54h Prediction - MAE 2022: 11.802274
+
+GRU - 54h Prediction - Time: 11.38s
+GRU - 54h Prediction - MAE: 6.122388
+GRU - 54h Prediction - MAE 2020: 4.951116
+GRU - 54h Prediction - MAE 2021: 4.589707
+GRU - 54h Prediction - MAE 2022: 9.814198
+
+LSTM - 54h Prediction - Time: 11.60s
+LSTM - 54h Prediction - MAE: 6.745284
+LSTM - 54h Prediction - MAE 2020: 5.224116
+LSTM - 54h Prediction - MAE 2021: 4.737883
+LSTM - 54h Prediction - MAE 2022: 11.566355
+
+TKAN - 60h Prediction - Time: 22.80s
+TKAN - 60h Prediction - MAE: 6.588722
+TKAN - 60h Prediction - MAE 2020: 5.444956
+TKAN - 60h Prediction - MAE 2021: 4.911992
+TKAN - 60h Prediction - MAE 2022: 10.526117
+
+GRU - 60h Prediction - Time: 11.04s
+GRU - 60h Prediction - MAE: 6.260659
+GRU - 60h Prediction - MAE 2020: 5.614456
+GRU - 60h Prediction - MAE 2021: 4.709830
+GRU - 60h Prediction - MAE 2022: 9.448503
+
+LSTM - 60h Prediction - Time: 11.40s
+LSTM - 60h Prediction - MAE: 6.667891
+LSTM - 60h Prediction - MAE 2020: 5.486208
+LSTM - 60h Prediction - MAE 2021: 4.691706
+LSTM - 60h Prediction - MAE 2022: 11.125061
+
+TKAN - 66h Prediction - Time: 25.45s
+TKAN - 66h Prediction - MAE: 6.848671
+TKAN - 66h Prediction - MAE 2020: 5.862421
+TKAN - 66h Prediction - MAE 2021: 4.990900
+TKAN - 66h Prediction - MAE 2022: 10.946347
+
+GRU - 66h Prediction - Time: 10.52s
+GRU - 66h Prediction - MAE: 6.871577
+GRU - 66h Prediction - MAE 2020: 5.730983
+GRU - 66h Prediction - MAE 2021: 5.415941
+GRU - 66h Prediction - MAE 2022: 10.486363
+
+LSTM - 66h Prediction - Time: 11.06s
+LSTM - 66h Prediction - MAE: 7.222390
+LSTM - 66h Prediction - MAE 2020: 6.050235
+LSTM - 66h Prediction - MAE 2021: 5.295801
+LSTM - 66h Prediction - MAE 2022: 11.635952
+
+TKAN - 72h Prediction - Time: 22.79s
+TKAN - 72h Prediction - MAE: 7.610916
+TKAN - 72h Prediction - MAE 2020: 6.151169
+TKAN - 72h Prediction - MAE 2021: 5.440392
+TKAN - 72h Prediction - MAE 2022: 12.780808
+
+GRU - 72h Prediction - Time: 10.05s
+GRU - 72h Prediction - MAE: 7.313753
+GRU - 72h Prediction - MAE 2020: 6.220939
+GRU - 72h Prediction - MAE 2021: 5.208379
+GRU - 72h Prediction - MAE 2022: 11.975029
+
+LSTM - 72h Prediction - Time: 10.54s
+LSTM - 72h Prediction - MAE: 7.170070
+LSTM - 72h Prediction - MAE 2020: 6.112785
+LSTM - 72h Prediction - MAE 2021: 5.187703
+LSTM - 72h Prediction - MAE 2022: 11.589981
+

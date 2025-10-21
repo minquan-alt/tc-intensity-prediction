@@ -76,7 +76,7 @@ if __name__ == "__main__":
             optimizer = optim.Adam(model.parameters(), lr=1e-3)
             model, total_time, train_loss_per_epoch, val_loss_per_epoch = train_val(model, criterion, optimizer, train_loader, val_loader, device, batch_size, epochs)
 
-            metrics = [nn.L1Loss()]
+            # metrics = [nn.L1Loss()]
             mae, mse = test_mae_mse(model, test_loader, dm, device)
 
             results[file_path][n_ahead] = {

@@ -1,0 +1,145 @@
+TRAINING SUMMARY
+rnn_kan_v1_1 - 6h Prediction - Time: 40.65s
+rnn_kan_v1_1 - 6h Prediction - MAE: 2.363013
+rnn_kan_v1_1 - 6h Prediction - MAE 2020: 1.724423
+rnn_kan_v1_1 - 6h Prediction - MAE 2021: 1.592040
+rnn_kan_v1_1 - 6h Prediction - MAE 2022: 4.053808
+
+rnn_kan_v1_2 - 6h Prediction - Time: 14.16s
+rnn_kan_v1_2 - 6h Prediction - MAE: 2.411226
+rnn_kan_v1_2 - 6h Prediction - MAE 2020: 1.662132
+rnn_kan_v1_2 - 6h Prediction - MAE 2021: 1.493382
+rnn_kan_v1_2 - 6h Prediction - MAE 2022: 4.412456
+
+rnn_kan_v1_1 - 12h Prediction - Time: 45.87s
+rnn_kan_v1_1 - 12h Prediction - MAE: 2.872359
+rnn_kan_v1_1 - 12h Prediction - MAE 2020: 2.106654
+rnn_kan_v1_1 - 12h Prediction - MAE 2021: 2.018651
+rnn_kan_v1_1 - 12h Prediction - MAE 2022: 4.829297
+
+rnn_kan_v1_2 - 12h Prediction - Time: 14.01s
+rnn_kan_v1_2 - 12h Prediction - MAE: 3.374908
+rnn_kan_v1_2 - 12h Prediction - MAE 2020: 2.368623
+rnn_kan_v1_2 - 12h Prediction - MAE 2021: 2.220699
+rnn_kan_v1_2 - 12h Prediction - MAE 2022: 5.990216
+
+rnn_kan_v1_1 - 18h Prediction - Time: 54.38s
+rnn_kan_v1_1 - 18h Prediction - MAE: 3.663031
+rnn_kan_v1_1 - 18h Prediction - MAE 2020: 2.511274
+rnn_kan_v1_1 - 18h Prediction - MAE 2021: 2.485182
+rnn_kan_v1_1 - 18h Prediction - MAE 2022: 6.500026
+
+rnn_kan_v1_2 - 18h Prediction - Time: 16.26s
+rnn_kan_v1_2 - 18h Prediction - MAE: 3.758333
+rnn_kan_v1_2 - 18h Prediction - MAE 2020: 2.645076
+rnn_kan_v1_2 - 18h Prediction - MAE 2021: 2.560309
+rnn_kan_v1_2 - 18h Prediction - MAE 2022: 6.582219
+
+rnn_kan_v1_1 - 24h Prediction - Time: 57.45s
+rnn_kan_v1_1 - 24h Prediction - MAE: 4.657882
+rnn_kan_v1_1 - 24h Prediction - MAE 2020: 3.001222
+rnn_kan_v1_1 - 24h Prediction - MAE 2021: 2.910618
+rnn_kan_v1_1 - 24h Prediction - MAE 2022: 8.872079
+
+rnn_kan_v1_2 - 24h Prediction - Time: 17.46s
+rnn_kan_v1_2 - 24h Prediction - MAE: 4.852908
+rnn_kan_v1_2 - 24h Prediction - MAE 2020: 3.342164
+rnn_kan_v1_2 - 24h Prediction - MAE 2021: 3.380616
+rnn_kan_v1_2 - 24h Prediction - MAE 2022: 8.526474
+
+rnn_kan_v1_1 - 30h Prediction - Time: 63.58s
+rnn_kan_v1_1 - 30h Prediction - MAE: 5.041441
+rnn_kan_v1_1 - 30h Prediction - MAE 2020: 3.336425
+rnn_kan_v1_1 - 30h Prediction - MAE 2021: 3.253259
+rnn_kan_v1_1 - 30h Prediction - MAE 2022: 9.424631
+
+rnn_kan_v1_2 - 30h Prediction - Time: 19.13s
+rnn_kan_v1_2 - 30h Prediction - MAE: 4.972865
+rnn_kan_v1_2 - 30h Prediction - MAE 2020: 3.736146
+rnn_kan_v1_2 - 30h Prediction - MAE 2021: 3.705576
+rnn_kan_v1_2 - 30h Prediction - MAE 2022: 8.109717
+
+rnn_kan_v1_1 - 36h Prediction - Time: 65.07s
+rnn_kan_v1_1 - 36h Prediction - MAE: 5.198702
+rnn_kan_v1_1 - 36h Prediction - MAE 2020: 3.899444
+rnn_kan_v1_1 - 36h Prediction - MAE 2021: 3.832917
+rnn_kan_v1_1 - 36h Prediction - MAE 2022: 8.590281
+
+rnn_kan_v1_2 - 36h Prediction - Time: 20.08s
+rnn_kan_v1_2 - 36h Prediction - MAE: 5.363060
+rnn_kan_v1_2 - 36h Prediction - MAE 2020: 4.092941
+rnn_kan_v1_2 - 36h Prediction - MAE 2021: 4.137344
+rnn_kan_v1_2 - 36h Prediction - MAE 2022: 8.519146
+
+rnn_kan_v1_1 - 42h Prediction - Time: 64.59s
+rnn_kan_v1_1 - 42h Prediction - MAE: 5.571439
+rnn_kan_v1_1 - 42h Prediction - MAE 2020: 4.213074
+rnn_kan_v1_1 - 42h Prediction - MAE 2021: 3.975248
+rnn_kan_v1_1 - 42h Prediction - MAE 2022: 9.431208
+
+rnn_kan_v1_2 - 42h Prediction - Time: 19.61s
+rnn_kan_v1_2 - 42h Prediction - MAE: 5.830920
+rnn_kan_v1_2 - 42h Prediction - MAE 2020: 4.474024
+rnn_kan_v1_2 - 42h Prediction - MAE 2021: 4.387227
+rnn_kan_v1_2 - 42h Prediction - MAE 2022: 9.461750
+
+rnn_kan_v1_1 - 48h Prediction - Time: 69.88s
+rnn_kan_v1_1 - 48h Prediction - MAE: 6.548311
+rnn_kan_v1_1 - 48h Prediction - MAE 2020: 4.710089
+rnn_kan_v1_1 - 48h Prediction - MAE 2021: 4.712377
+rnn_kan_v1_1 - 48h Prediction - MAE 2022: 11.365618
+
+rnn_kan_v1_2 - 48h Prediction - Time: 22.31s
+rnn_kan_v1_2 - 48h Prediction - MAE: 6.241362
+rnn_kan_v1_2 - 48h Prediction - MAE 2020: 4.997881
+rnn_kan_v1_2 - 48h Prediction - MAE 2021: 4.856004
+rnn_kan_v1_2 - 48h Prediction - MAE 2022: 9.719049
+
+rnn_kan_v1_1 - 54h Prediction - Time: 76.59s
+rnn_kan_v1_1 - 54h Prediction - MAE: 6.699048
+rnn_kan_v1_1 - 54h Prediction - MAE 2020: 5.412406
+rnn_kan_v1_1 - 54h Prediction - MAE 2021: 4.816674
+rnn_kan_v1_1 - 54h Prediction - MAE 2022: 11.065752
+
+rnn_kan_v1_2 - 54h Prediction - Time: 22.70s
+rnn_kan_v1_2 - 54h Prediction - MAE: 6.422249
+rnn_kan_v1_2 - 54h Prediction - MAE 2020: 5.285857
+rnn_kan_v1_2 - 54h Prediction - MAE 2021: 4.992821
+rnn_kan_v1_2 - 54h Prediction - MAE 2022: 9.913883
+
+rnn_kan_v1_1 - 60h Prediction - Time: 77.65s
+rnn_kan_v1_1 - 60h Prediction - MAE: 7.253520
+rnn_kan_v1_1 - 60h Prediction - MAE 2020: 5.930972
+rnn_kan_v1_1 - 60h Prediction - MAE 2021: 5.456717
+rnn_kan_v1_1 - 60h Prediction - MAE 2022: 11.579688
+
+rnn_kan_v1_2 - 60h Prediction - Time: 22.90s
+rnn_kan_v1_2 - 60h Prediction - MAE: 6.990275
+rnn_kan_v1_2 - 60h Prediction - MAE 2020: 5.653624
+rnn_kan_v1_2 - 60h Prediction - MAE 2021: 5.421156
+rnn_kan_v1_2 - 60h Prediction - MAE 2022: 10.968573
+
+rnn_kan_v1_1 - 66h Prediction - Time: 78.93s
+rnn_kan_v1_1 - 66h Prediction - MAE: 8.160790
+rnn_kan_v1_1 - 66h Prediction - MAE 2020: 6.238841
+rnn_kan_v1_1 - 66h Prediction - MAE 2021: 5.652556
+rnn_kan_v1_1 - 66h Prediction - MAE 2022: 14.341798
+
+rnn_kan_v1_2 - 66h Prediction - Time: 22.75s
+rnn_kan_v1_2 - 66h Prediction - MAE: 7.308835
+rnn_kan_v1_2 - 66h Prediction - MAE 2020: 6.385749
+rnn_kan_v1_2 - 66h Prediction - MAE 2021: 6.388189
+rnn_kan_v1_2 - 66h Prediction - MAE 2022: 9.816674
+
+rnn_kan_v1_1 - 72h Prediction - Time: 78.63s
+rnn_kan_v1_1 - 72h Prediction - MAE: 8.256354
+rnn_kan_v1_1 - 72h Prediction - MAE 2020: 6.778449
+rnn_kan_v1_1 - 72h Prediction - MAE 2021: 5.941852
+rnn_kan_v1_1 - 72h Prediction - MAE 2022: 13.683132
+
+rnn_kan_v1_2 - 72h Prediction - Time: 22.99s
+rnn_kan_v1_2 - 72h Prediction - MAE: 7.345506
+rnn_kan_v1_2 - 72h Prediction - MAE 2020: 6.369120
+rnn_kan_v1_2 - 72h Prediction - MAE 2021: 5.804087
+rnn_kan_v1_2 - 72h Prediction - MAE 2022: 10.951039
+

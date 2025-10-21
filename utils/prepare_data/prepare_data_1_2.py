@@ -1,48 +1,14 @@
-import os
-import pickle
 import numpy as np
-import torch
 import gc
-from torch.utils.data import Dataset, DataLoader
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
 
-import tensorflow as tf
-
-# ========================== for torch ==========================
-def get_raw_data(raw_data_dict):
-  raw_data = {}
-  for dict_ in raw_data_dict.values():
-    raw_data.update(dict_)
-  return raw_data
-def load_and_process_data(data_path, train_years, val_years, test_years):
-  raw_train_data_dict = {}
-  raw_val_data_dict = {}
-  raw_test_data_dict = {}
-  for filename in os.listdir(data_path):
-    if filename.endswith('.pkl'):
-      year = int(filename[11:15])
-      if year not in train_years and year not in val_years and year not in test_years:
-        continue
-      with open(os.path.join(data_path, filename), 'rb') as f:
-        data = pickle.load(f)
-        if year in train_years:
-          raw_train_data_dict[filename] = data
-        elif year in val_years:
-          raw_val_data_dict[filename] = data
-        elif year in test_years:
-          raw_test_data_dict[filename] = data
-        else:
-          raise ValueError(f"Invalid year: {year}")
-
-  raw_train_data_dict = dict(sorted(raw_train_data_dict.items()))
-  raw_val_data_dict = dict(sorted(raw_val_data_dict.items()))
-  raw_test_data_dict = dict(sorted(raw_test_data_dict.items()))
-
-  raw_train_data = get_raw_data(raw_train_data_dict)
-  raw_val_data = get_raw_data(raw_val_data_dict)
-  raw_test_data = get_raw_data(raw_test_data_dict)
-  return raw_train_data, raw_val_data, raw_test_data
+'''
+cma_features + era5_features --> X (batch, seq_x + seq_y, n_features).
+    cma_features: 4 features (lat, lon, v_max, p_min)
+    era5_features:
+        single: mỗi features lấy center_grid làm 1 features. có 4 single features => có 4 features
+        multi: mỗi features lấy center_grid và 1 depth làm 1 features, có 5 multi features (chỉ lấy 3 features) và 4 depth => 12 features
+-> X có 20 features (batch, seq_x + seq_y, 20)
+'''
 
 def prepare_data(storm_data, sequence_length, n_ahead, dtype=np.float32):
   total_sequence = 0
@@ -58,7 +24,7 @@ def prepare_data(storm_data, sequence_length, n_ahead, dtype=np.float32):
   era5_single_len = storm_data[first_key][0]['features']['single'].shape[0]
   era5_multi_len = storm_data[first_key][0]['features']['multi'][1:4].shape[0] * storm_data[first_key][0]['features']['multi'].shape[1]
   features_len = cma_len + era5_single_len + era5_multi_len
-  input_shape = (total_sequence, sequence_length, features_len)
+  input_shape = (total_sequence, sequence_length + n_ahead, features_len)
   output_shape = (total_sequence, n_ahead)
 
   X_sequences = np.empty(input_shape, dtype=dtype)
@@ -96,6 +62,21 @@ def prepare_data(storm_data, sequence_length, n_ahead, dtype=np.float32):
         X_sequences[idx, j, 4:] = era5_features
 
       for j in range(n_ahead):
+        era5_features = []
+        
+        single_era5_features = storm_records[i + sequence_length + j]['features']['single']
+        multi_era5_features = storm_records[i + sequence_length + j]['features']['multi'][1:4, :, :, :]
+
+        for m in range(single_era5_features.shape[0]):
+          era5_features.append(single_era5_features[m, center_grid, center_grid])
+        for m in range(multi_era5_features.shape[0]):
+          for n in range(multi_era5_features.shape[1]):
+            era5_features.append(multi_era5_features[m, n, center_grid, center_grid])
+        era5_features = dtype(era5_features)
+
+        X_sequences[idx, sequence_length + j, :4] = 0  
+        X_sequences[idx, sequence_length + j, 4:] = era5_features     
+
         target = storm_records[i + sequence_length + j]['targets']
         y_sequences[idx, j] = dtype(target['vmax'])
 
@@ -120,28 +101,3 @@ def prepare_data(storm_data, sequence_length, n_ahead, dtype=np.float32):
 
   gc.collect()
   return (X_sequences, y_sequences, metadata)
-
-class StormDataset(Dataset):
-    def __init__(self, X, y):
-        self.X = torch.as_tensor(X, dtype=torch.float32)
-        self.y = torch.as_tensor(y, dtype=torch.float32)
-    def __len__(self):
-        return len(self.X)
-
-    def __getitem__(self, idx):
-        return self.X[idx], self.y[idx]
-    
-
-# ========================== for keras ==========================
-def dataset_loader(X, y, batch_size=128, shuffle=True, n_ahead=1):
-  X_tf = tf.convert_to_tensor(X, dtype=tf.float32)
-  y_tf = tf.convert_to_tensor(y, dtype=tf.float32)
-
-  dataset = tf.data.Dataset.from_tensor_slices((X_tf, y_tf))
-  if shuffle:
-    dataset = dataset.shuffle(buffer_size=len(X))
-
-  batch_size = int(batch_size)
-  dataset = dataset.batch(batch_size)
-  dataset = dataset.prefetch(tf.data.AUTOTUNE)
-  return dataset
